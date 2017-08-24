@@ -1,0 +1,36 @@
+{
+   "name": "riot-starter-kit",
+   "keywords": [
+      "riot",
+      "riot-starter-kit",
+      "riot-hot-module-reload",
+      "riot-hmr"
+   ],
+   "scripts": {
+      "clean": "rm -rf ./dist",
+      "serve": "webpack-dev-server --inline --hot --host 0.0.0.0 --port 80 --config webpack.config.dev.js",
+      "build": "npm run clean && webpack -p --config webpack.config.prod.js",
+      "analyse": "webpack -p --config webpack.config.prod.js"
+   },
+   "devDependencies": {
+      "css-loader": "^0.26.1",
+      "file-loader": "^0.10.1",
+      "html-webpack-plugin": "^2.26.0",
+      "less": "^2.7.2",
+      "less-loader": "^2.2.3",
+      "raw-loader": "^0.5.1",
+      "reload-html-webpack-plugin": "^0.1.2",
+      "riot-tag-loader": "^1.0.0",
+      "style-loader": "^0.13.1",
+      "webpack": "^1.14.0",
+      "webpack-bundle-analyzer": "^2.8.2",
+      "webpack-dev-server": "^1.16.2"
+   },
+   "dependencies": {
+      "bluebird": "^3.5.0",
+      "jquery": "^3.2.0",
+      "jquery-validation": "^1.16.0",
+      "lodash": "^4.17.4",
+      "riot": "^3.6.2"
+   }
+}
